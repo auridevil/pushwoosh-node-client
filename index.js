@@ -56,13 +56,21 @@ PushwooshClient.prototype.sendMessage = function (msg, device, options, callback
         devices = device;
     }
 
-    var defaultOptions = {
-        send_date: 'now',
-        ignore_user_timezone: true,
-        content: msg,
-        devices: devices
-    };
-
+    var defaultOptions;
+    if(devices && devices.length>0){
+        defaultOptions = {
+            send_date: 'now',
+            ignore_user_timezone: true,
+            content: msg,
+            devices: devices
+        };
+    }else{
+        defaultOptions = {
+            send_date: 'now',
+            ignore_user_timezone: true,
+            content: msg
+        };
+    }
     var notification = extend(defaultOptions, options);
 
     var body = {
