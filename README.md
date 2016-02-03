@@ -2,13 +2,16 @@
 
 [![Build Status](https://travis-ci.org/nluo/pushwoosh-node-client.svg?branch=master)](https://travis-ci.org/nluo/pushwoosh-node-client) [![Join the chat at https://gitter.im/nluo/pushwoosh-node-client](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nluo/pushwoosh-node-client?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A node js client to consume the Pushwoosh API to send push notifications to mobile devices
+A node js client to consume the Pushwoosh API to send push notifications to mobile devices based on NLUO original modules.
+
+Based on: https://github.com/nluo/pushwoosh-node-client
+Forked to fix some issues (the original repo seems to be deprecated, no fix and no answers)
 
 ## Quick Reference
 
 #### Installation
 
-    npm i pushwoosh-client --save
+    npm i auridevil/pushwoosh-node-client --save
 
 
 #### Send message to all devices
