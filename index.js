@@ -24,7 +24,7 @@ function PushwooshClient(appCode, authToken, options) {
 PushwooshClient.prototype.sendMessage = function (msg, device, options, callback) {
 
     var client = this;
-    if (!msg || typeof msg !== 'string') {
+    if (!msg) {
         return callback(new Error('Message has to be provided'));
     }
 
